@@ -10,7 +10,7 @@ function Why() {
         <Container maxWidth="lg">
             <Grid container spacing={3} sx={{ padding: { xs: '20px', md: '40px' }}}>
                 <Grid item xs={12} md={6}>
-                <Typography variant="h2" component="h1" gutterBottom sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', textAlign:'center' }}>
+                <Typography variant="h3" component="h1" gutterBottom sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', textAlign:'center' }}>
                         Why Choose Us
                     </Typography>
                     <Grid container spacing={3} sx={{display:'flex', flexDirection:'column', marginTop: '2em' }}>

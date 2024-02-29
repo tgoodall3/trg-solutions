@@ -5,7 +5,7 @@ function Contact() {
     return (
         <Box sx={{ pt: '64px', backgroundColor: 'black', color: 'white' }}>
             <Container maxWidth="md" sx={{padding:'50px'}}>
-                <Typography variant="h2" component="h1" gutterBottom sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', textAlign:'center' }}>
+                <Typography variant="h3" component="h1" gutterBottom sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', textAlign:'center' }}>
                     Lets Work!
                 </Typography>
                 <Box component="form" sx={{ marginTop: '2em', backgroundColor:'#7900D2', padding:'70px', borderRadius:'40px', fontFamily: 'Ubuntu, sans-serif' }}>
@@ -36,7 +36,7 @@ function Contact() {
                         InputProps={{ style: { color: 'white' } }}
                         InputLabelProps={{ style: { color: 'white' } }}
                     />
-                    <Button className='ubuntu-medium' variant="contained"  sx={{ marginTop:'2em',border:'2px solid #7900D2', padding:'10px', borderRadius:'40px', fontWeight:'500', color:'black', width:'150px', backgroundColor:'transparent', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500'}}
+                    <Button className='ubuntu-medium' variant="contained"  sx={{ marginTop:'2em',border:'2px solid #7900D2', padding:'10px', borderRadius:'40px', fontWeight:'500', color:'whote', width:'150px', backgroundColor:'transparent', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500'}}
                         onMouseEnter={(event) => {
                             event.target.style.color = '#7900D2';
                             event.target.style.backgroundColor = 'white';
