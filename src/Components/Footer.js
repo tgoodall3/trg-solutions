@@ -5,7 +5,7 @@ import logo from '../Images/logo3.png';
 const Footer = () => {
     return (
         <Box sx={{ backgroundColor: '#7900D2', color: 'white', py: { xs: 2, md: 3 } }}>
-            <Container maxWidth="lg">
+            <Container maxWidth="lg" >
                 <Box sx={{ backgroundColor: 'black', color: 'white', py: { xs: 2, md: 3 }, borderRadius:'40px' }}>
                     <Container maxWidth="lg">
                         <Grid container spacing={3} justifyContent={{ xs: 'center', md: 'space-between' }} alignItems="center">
@@ -14,9 +14,9 @@ const Footer = () => {
                             </Grid>
                             <Grid item xs={12} sm={6} md={4} sx={{ textAlign: 'center' }}>
                                 <Typography variant="h6">Contact Info</Typography>
-                                <Typography>123 Main St, Anytown, USA</Typography>
-                                <Typography>(123) 456-7890</Typography>
-                                <Typography>info@yourwebsite.com</Typography>
+                                <Typography>Noblesville, IN</Typography>
+                                <Typography>(812) 929 7256</Typography>
+                                <Typography>trgdigitalsolutions.com</Typography>
                             </Grid>
                             <Grid item xs={12} sm={6} md={4} sx={{ textAlign: 'center' }}>
                                 <Typography variant="h6">Follow Us</Typography>

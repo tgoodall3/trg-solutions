@@ -5,8 +5,8 @@ function Contact() {
     return (
         <Box sx={{ pt: '64px', backgroundColor: 'black', color: 'white' }}>
             <Container maxWidth="md" sx={{padding:'50px'}}>
-                <Typography variant="h3" component="h1" gutterBottom sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', textAlign:'center' }}>
-                    Lets Work!
+                <Typography id='contact' variant="h3" component="h1" gutterBottom sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', textAlign:'center' }}>
+                    Lets Connect!
                 </Typography>
                 <Box component="form" sx={{ marginTop: '2em', backgroundColor:'white', padding:'70px', borderRadius:'40px', fontFamily: 'Ubuntu, sans-serif' }}>
                 <TextField

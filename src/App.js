@@ -2,6 +2,9 @@ import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 // Import your components here
 import Home from './Pages/Home';
@@ -23,6 +26,12 @@ function App() {
       },
     },
   });
+
+    useEffect(() => {
+      AOS.init({
+        duration : 2000
+      });
+    }, []);
   
   
   return (

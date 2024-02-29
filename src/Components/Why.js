@@ -9,7 +9,7 @@ function Why() {
     <Box sx={{ height:'100%', pt: '64px', background:`linear-gradient(rgba(42, 1, 72, 1) 1%, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))`, backgroundRepeat:'no-repeat', backgroundSize:'cover', backgroundPosition:'center', color: 'black' }}>
         <Container maxWidth="lg">
             <Grid container spacing={3} sx={{ padding: { xs: '20px', md: '40px' }}}>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} data-aos='fade-right'>
                 <Typography variant="h3" component="h1" gutterBottom sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', textAlign:'center' }}>
                         Why Choose Us
                     </Typography>
