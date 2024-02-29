@@ -10,7 +10,7 @@ function Hero() {
                                 }}>
             <Container maxWidth="md" sx={{padding:{sm:"40px", md:'0'}}}>
                 <Typography className='ubuntu-regular' variant="h2" component="h1" gutterBottom sx={{color:'#7900D2', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', fontSize: { xs: '2rem', md: '3rem' } }}>
-                    Welcome to TRG Solutions
+                    Welcome to TRG Digital Solutions
                 </Typography>
                 <Typography className='ubuntu-regular' variant="h5" gutterBottom sx={{fontFamily: 'Ubuntu, sans-serif', fontWeight:'300', fontSize: { xs: '1rem', md: '1.5rem' } }}>
                     We provide innovative tech solutions to help your business grow.
