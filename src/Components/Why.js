@@ -15,7 +15,7 @@ function Why() {
                     </Typography>
                     <Grid container spacing={3} sx={{display:'flex', flexDirection:'column', marginTop: '2em' }}>
                         <Grid item xs={12}>
-                            <Typography variant="h4" gutterBottom sx={{ color:'#7900D2', fontFamily: 'Ubuntu, sans-serif', fontWeight:'400' }}>
+                            <Typography variant="h4" gutterBottom sx={{ color:'#7900D2', fontFamily: 'Ubuntu, sans-serif', fontWeight:'400', textAlign:{xs:'center', sm:'left', md:'left'} }}>
                                 Expertise
                             </Typography>
                             <Typography sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'300', padding: { xs: '0 1rem', md: '0 2rem' }, textAlign: 'justify'}}>
@@ -23,7 +23,7 @@ function Why() {
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant="h4" gutterBottom sx={{ color:'#7900D2', fontFamily: 'Ubuntu, sans-serif', fontWeight:'400' }}>
+                            <Typography variant="h4" gutterBottom sx={{ color:'#7900D2', fontFamily: 'Ubuntu, sans-serif', fontWeight:'400',  textAlign:{xs:'center', sm:'left', md:'left'}  }}>
                                 Custom Solutions
                             </Typography>
                             <Typography sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'300', padding: { xs: '0 1rem', md: '0 2rem' }, textAlign: 'justify'}}>
@@ -31,7 +31,7 @@ function Why() {
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant="h4" gutterBottom sx={{ color:'#7900D2', fontFamily: 'Ubuntu, sans-serif', fontWeight:'400' }}>
+                            <Typography variant="h4" gutterBottom sx={{ color:'#7900D2', fontFamily: 'Ubuntu, sans-serif', fontWeight:'400',  textAlign:{xs:'center', sm:'left', md:'left'}}}>
                                 Customer Satisfaction
                             </Typography>
                             <Typography sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'300', padding: { xs: '0 1rem', md: '0 2rem' }, textAlign: 'justify'}}>
