@@ -8,7 +8,7 @@ function Hero() {
         <Box sx={{ height: '100vh', pt: '64px', backgroundImage:`linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(${backgroundImage})`, color: '#fff',
                                 backgroundRepeat:'no-repeat', backgroundSize:'cover', backgroundPosition:'center'
                                 }}>
-            <Container maxWidth="md">
+            <Container maxWidth="md" sx={{padding:{sm:"40px", md:'0'}}}>
                 <Typography className='ubuntu-regular' variant="h2" component="h1" gutterBottom sx={{color:'#7900D2', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', fontSize: { xs: '2rem', md: '3rem' } }}>
                     Welcome to TRG Solutions
                 </Typography>

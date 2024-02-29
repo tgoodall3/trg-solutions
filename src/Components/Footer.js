@@ -4,9 +4,9 @@ import logo from '../Images/logo3.png';
 
 const Footer = () => {
     return (
-        <Box sx={{ backgroundColor: '#2A0148', color: 'white', py: { xs: 2, md: 3 } }}>
+        <Box sx={{ backgroundColor: '#7900D2', color: 'white', py: { xs: 2, md: 3 } }}>
             <Container maxWidth="lg">
-                <Box sx={{ backgroundColor: '#2A0148', color: 'white', py: { xs: 2, md: 3 } }}>
+                <Box sx={{ backgroundColor: 'black', color: 'white', py: { xs: 2, md: 3 }, borderRadius:'40px' }}>
                     <Container maxWidth="lg">
                         <Grid container spacing={3} justifyContent={{ xs: 'center', md: 'space-between' }} alignItems="center">
                             <Grid item xs={12} sm={6} md={4} sx={{ textAlign: 'center' }}>
