@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Typography, IconButton } from '@mui/material';
 import { Facebook, Instagram, Twitter } from '@mui/icons-material';
 import logo from '../Images/logo3.png';
+import { hover } from '@testing-library/user-event/dist/hover';
 
 const Footer = () => {
     return (
@@ -21,13 +22,13 @@ const Footer = () => {
                             <Grid item xs={12} sm={6} md={4} sx={{ textAlign: 'center' }}>
                                 <Typography variant="h6">Follow Us</Typography>
                                 <IconButton color="inherit" href="https://www.facebook.com" target="_blank" rel="noopener">
-                                    <Facebook />
+                                    <Facebook sx={{'&:hover': { color: '#7900D2' }}}/>
                                 </IconButton>
-                                <IconButton color="inherit" href="https://www.instagram.com" target="_blank" rel="noopener">
-                                    <Instagram />
+                                <IconButton  color="inherit" href="https://www.instagram.com" target="_blank" rel="noopener">
+                                    <Instagram sx={{'&:hover': { color: '#7900D2' }}}/>
                                 </IconButton>
                                 <IconButton color="inherit" href="https://www.twitter.com" target="_blank" rel="noopener">
-                                    <Twitter />
+                                    <Twitter sx={{'&:hover': { color: '#7900D2' }}}/>
                                 </IconButton>
                             </Grid>
                         </Grid>
