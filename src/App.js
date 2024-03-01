@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
+
 // Import your components here
 import Home from './Pages/Home';
 import Navbar from './Components/Navbar';

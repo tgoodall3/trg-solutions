@@ -8,10 +8,17 @@ import Why from '../Components/Why';
 import Contact from './Contact';
 import About from './About';
 import Collab from '../Components/Collab';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 function Home() {
   return (
+    <HelmetProvider>
     <div>
+    <Helmet>
+      <title>TRG Digital Solutions - Web Development and Design for Small Businesses</title>
+      <meta name="description" content="TRG Digital Solutions specializes in web development, design, and management services tailored for small businesses, startups, and individual portfolios. We help bring your digital vision to life." />
+      <meta name="keywords" content="TRG Digital Solutions, Web Development, Web Design, Small Business, Startups, Portfolio, Web Management, Digital Solutions" />
+</Helmet>
     <Hero />
     <About />
     <Services />
@@ -19,6 +26,7 @@ function Home() {
     <Why />
     <Contact />
     </div>
+    </HelmetProvider>
   );
 }
 
