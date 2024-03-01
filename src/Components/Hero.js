@@ -17,7 +17,7 @@ function Hero() {
                 <Typography className='ubuntu-regular' variant="h5" gutterBottom sx={{fontFamily: 'Ubuntu, sans-serif', fontWeight:'300', fontSize: { xs: '1rem', md: '1.5rem' } }}>
                     We provide innovative tech solutions to help your business grow.
                 </Typography>
-                <Link to="services" smooth={true} duration={500}>
+                <Link to="about" smooth={true} duration={500}>
   <Button className='ubuntu-medium' variant="contained" color="primary" sx={{ marginTop:'2em',border:'2px solid #7900D2', padding: { xs: '5px', md: '10px' }, borderRadius:'40px', fontWeight:'500', color:'#7900D2', width:'150px', backgroundColor:'transparent', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500'}}
     onMouseEnter={(event) => {
       event.target.style.color = 'white';

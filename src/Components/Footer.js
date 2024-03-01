@@ -17,7 +17,7 @@ const Footer = () => {
                                 <Typography variant="h6">Contact Info</Typography>
                                 <Typography>Noblesville, IN</Typography>
                                 <Typography>(812) 929 7256</Typography>
-                                <Typography>trgdigitalsolutions.com</Typography>
+                                <Typography>trgdigitalsolutions@sales.com</Typography>
                             </Grid>
                             <Grid item xs={12} sm={6} md={4} sx={{ textAlign: 'center' }}>
                                 <Typography variant="h6">Follow Us</Typography>

@@ -5,7 +5,7 @@ import { FaLaptopCode, FaCogs, FaRegLightbulb } from 'react-icons/fa';
 
     function Services() {
         return (
-            <Box id='services' sx={{height:'100%', pt: '64px', backgroundColor: '#2A0148', color: 'black' }}>
+            <Box id='services' sx={{height:'100%', pt: '64px', backgroundColor: '#2A0148', color: 'black', marginTop:'100px' }}>
                 <Container maxWidth="full" sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
                 <Typography data-aos='fade-up' variant="h3" component="h1" gutterBottom sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', textAlign:'center' }}>
                         Our Services

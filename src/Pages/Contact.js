@@ -3,8 +3,7 @@ import { Box, Container, Typography, TextField, Button } from '@mui/material';
 
 function Contact() {
     return (
-        <Box sx={{ pt: '64px', backgroundColor: 'black', color: 'white' }}>
-            <Container maxWidth="md" sx={{padding:'50px'}}>
+        <Box sx={{ pt: '64px', background:`linear-gradient(rgba(0, 0, 0, 1) 0%, #7900D2 100%)`, color: 'white' }}>            <Container maxWidth="md" sx={{padding:'50px'}}>
                 <Typography id='contact' variant="h3" component="h1" gutterBottom sx={{color:'white', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500', textAlign:'center' }}>
                     Lets Connect!
                 </Typography>
