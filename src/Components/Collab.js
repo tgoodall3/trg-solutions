@@ -13,7 +13,7 @@ const Collab = () => {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, .9) 40%,rgba(0, 0, 0, .8) ), url(${purple})`,
             borderRadius:'150px', 
             width: { xs: '90%', sm: '80%', md: '70%' }, 
-            margin:'0 auto', 
+            margin: { xs: '1em auto', sm: '2em auto', md: '10em auto' },
             display:{xs:'none', md:'block'}
         }}>
             <Grid container flexDirection='column' justifyContent="center" alignItems="center">

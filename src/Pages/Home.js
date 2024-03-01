@@ -13,11 +13,9 @@ function Home() {
   return (
     <div>
     <Hero />
-    {/* <Collab /> */}
     <About />
-    <Collab />
-
     <Services />
+    <Collab />
     <Why />
     <Contact />
     </div>
