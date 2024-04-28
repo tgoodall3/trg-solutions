@@ -19,9 +19,9 @@ function Reviews() {
     const totalPages = Math.ceil(reviews.length / reviewsPerPage);
 
  useEffect(() => {
-  fetch('https://trgdigitalsolutions.com/api/reviews')
-    .then(response => response.json())
-    .then(data => setReviews(data))
+fetch('https://trgdigitalsolutions.com/api/reviews')
+    .then(response => response.text())  // convert to plain text
+    .then(text => console.log(text))  // log response text
     .catch(error => console.error(error));
 }, []);
 
