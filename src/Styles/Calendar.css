@@ -1,0 +1,31 @@
+.rbc-calendar {
+    background-color: #f0f0f0;
+}
+
+.rbc-event {
+    background-color: #7900d2;
+    color: white;
+}
+
+.rbc-toolbar label {
+    color: #7900d2;
+}
+
+.rbc-btn-group button {
+    color: #7900d2;
+}
+
+.rbc-today {
+    background-color: #e0e0e0;
+}
+
+.appointment-modal {
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}

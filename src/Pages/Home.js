@@ -9,8 +9,11 @@ import Contact from './Contact';
 import About from './About';
 import Collab from '../Components/Collab';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
+import Calendar from 'react-calendar';
+import Reviews from '../Components/Reviews';
 
 function Home() {
+
   return (
     <HelmetProvider>
     <div>
@@ -24,8 +27,10 @@ function Home() {
     <Services />
     <Collab />
     <Why />
+    <Reviews />
+
     <Contact />
-    </div>
+  </div>
     </HelmetProvider>
   );
 }
