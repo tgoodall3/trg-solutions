@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Typography, Button, Grid, TextField, useMediaQuery } from '@mui/material';
+import { Box, Typography, Button, Grid, TextField, useMediaQuery, Container } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import ReactStars from "react-rating-stars-component"; 
+import ReactStars from "react-rating-stars-component";
+import '../Styles/stars.css'; 
 
 function Reviews() {
     const theme = useTheme();
@@ -18,7 +19,7 @@ function Reviews() {
     const totalPages = Math.ceil(reviews.length / reviewsPerPage);
 
  useEffect(() => {
-  fetch('https://trgdigitalsolutions.com//api/reviews')
+  fetch('https://trgdigitalsolutions.com/api/reviews')
     .then(response => response.json())
     .then(data => setReviews(data))
     .catch(error => console.error(error));
@@ -26,7 +27,7 @@ function Reviews() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-       fetch('https://trgdigitalsolutions.com//api/reviews', {
+       fetch('https://trgdigitalsolutions.com/api/reviews', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ name, comment, rating, date })
@@ -46,54 +47,82 @@ function Reviews() {
         setRating(newRating);
     };
 
+    
     return (
       <div>
-    <Box sx={{ p: 9,
+    <Box sx={{ 
         backgroundColor: 'black',
+        width: '100%',
+        boxSizing: 'border-box',
          }}>
-               <form maxWidth='md' onSubmit={handleSubmit} style={{width:'93%', display:'flex', flexDirection:'column', margin: '40px auto', backgroundColor:'white', padding:'30px', borderRadius:'16px', boxSizing:'border-box'}}>
-               <Typography variant="h2" component="h1" gutterBottom sx={{color: theme.palette.primary.main, fontSize: isMobile ? '18px' : '25px', textAlign:'center', marginBottom:'30px'}}>
-            Add your experience with us, we would love to hear from you!
-        </Typography>
-                <TextField 
-                    sx={{marginBottom:'20px'}}
-                    label="Name"
-                    value={name}
-                    onChange={e => setName(e.target.value)}
-                    required
-                />
-                <TextField
-                    sx={{marginBottom:'20px'}}
-                    label="Review"
-                    value={comment}
-                    onChange={e => setComment(e.target.value)}
-                    required
-                />
-                <ReactStars
-                    count={5}
-                    onChange={ratingChanged}
-                    size={24}
-                    activeColor="#ffd700"
-                    style={{marginBottom:'20px'}}
-                />
-                <TextField
-                    sx={{marginTop:'20px'}}
-                    label="Date"
-                    type="date"
-                    value={date}
-                    onChange={e => setDate(e.target.value)}
-                    InputLabelProps={{
-                    shrink: true,
-                    }}
-                    required
-                />
-            <Button
-                sx={{marginTop:'20px', width:'150px', margin:'15px auto'}}
-                variant="contained"
-                color="primary"
-             type="submit">Submit</Button>
-        </form>
-        <Grid container spacing={1}>
+            <Container maxWidth="md" sx={{padding:'50px'}}>
+    <Typography variant="h2" className='ubuntu-medium' component="h1" gutterBottom sx={{color: theme.palette.primary.main, fontSize: isMobile ? '18px' : '25px', textAlign:'center', marginBottom:'30px'}}>
+        Add your experience with us, we would love to hear from you!
+    </Typography>
+    <Box component="form" onSubmit={handleSubmit} sx={{display:'flex', flexDirection:'column', alignItems:{xs:'center', md:"flex-start"}, marginTop: '2em', backgroundColor:'white', padding:'40px', borderRadius:'40px', fontFamily: 'Ubuntu, sans-serif' }}>
+        <TextField
+            fullWidth
+            label="Name"
+            variant="outlined"
+            color="primary"
+            sx={{ marginBottom: '1em' }}
+            InputProps={{ style: { color: 'black' } }}
+            InputLabelProps={{ style: { color: 'black' } }}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+        />
+        <TextField
+            fullWidth
+            label="Review"
+            variant="outlined"
+            color="primary"
+            sx={{ marginBottom: '1em' }}
+            InputProps={{ style: { color: 'black' } }}
+            InputLabelProps={{ style: { color: 'black' } }}
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+        />
+    <ReactStars
+        className='stars'
+        count={5}
+        onChange={ratingChanged}
+        size={24}
+        activeColor="#ffd700"
+    />
+
+        <TextField
+            fullWidth
+            label="Date"
+            type="date"
+            variant="outlined"
+            color="primary"
+            sx={{ marginBottom: '1em', marginTop:'1em' }}
+            InputProps={{ style: { color: 'black' } }}
+            InputLabelProps={{ style: { color: 'black' }, shrink: true }}
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+        />
+        <Button className='ubuntu-medium' variant="contained"  sx={{ marginTop:'2em',border:'2px solid #7900D2', padding:'10px', borderRadius:'40px', fontWeight:'500', color:'black', width:'150px', backgroundColor:'transparent', fontFamily: 'Ubuntu, sans-serif', fontWeight:'500',   }}
+            onMouseEnter={(event) => {
+                event.target.style.color = 'white';
+                event.target.style.backgroundColor = '#7900D2';
+            }}
+            onMouseLeave={(event) => {
+                event.target.style.backgroundColor = 'transparent';
+                event.target.style.color = 'black';
+                event.target.style.fontWeight = '4  00';
+                event.target.style.border = '2px solid #7900D2';
+                event.target.style.transition = '.2s'
+            }}
+            type="submit"
+        >
+            Submit
+        </Button>
+    </Box>
+</Container>
+        <Grid container spacing={1}
+             sx={{
+            }}>
             <Grid item xs={12} sm={6} md={4}>
                 <Box sx={{ backgroundColor: theme.palette.secondary.main, width: '220px', height: '220px', margin: 'auto', display:'flex', justifyContent:'center', alignItems:'left', flexDirection:'column', padding:'20px' }}>
                     <Typography variant="h2" component="h1" gutterBottom sx={{color: '#7900D2', fontWeight:'bold', fontSize: '25px'}}>
@@ -110,7 +139,15 @@ function Reviews() {
                         edit={false}
                         style={{marginBottom:'20px'}}
                     />
+                    <div style={{
+                        display:'flex',
+                        margin:'10px auto',
+                    }}>
+                         <Button sx={{color:theme.palette.primary.main}} onClick={() => setPage(page => Math.max(page - 1, 0))}>Previous</Button>
+                        <Button sx={{color:theme.palette.primary.main}} onClick={() => setPage(page => Math.min(page + 1, totalPages - 1))}>Next</Button>
+                    </div>
                 </Box>
+                
             </Grid>
             {reviews.slice(page * reviewsPerPage, (page + 1) * reviewsPerPage).map((review, index) => (
                 <Grid item xs={12} sm={6} md={4} key={index} sx={{}}>
@@ -135,8 +172,6 @@ function Reviews() {
                 </Grid>
             ))}
         </Grid>
-        <Button sx={{color:theme.palette.secondary.main}} onClick={() => setPage(page => Math.max(page - 1, 0))}>Previous</Button>
-        <Button sx={{color:theme.palette.secondary.main}} onClick={() => setPage(page => Math.min(page + 1, totalPages - 1))}>Next</Button>
     </Box>
 </div>
     );
