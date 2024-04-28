@@ -39,7 +39,7 @@ function Reviews() {
         setComment('');
         setRating('');
         setDate('');
-        window.location.reload();
+        // window.location.reload();
         
     };
 
