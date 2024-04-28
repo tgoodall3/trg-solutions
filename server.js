@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 const mysql = require('mysql');
 const cors = require('cors');
-app.use(cors());
+app.use(cors({ origin: 'https://trgdigitalsolutions.com/'}));
 
 
 const db = mysql.createConnection({
