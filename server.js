@@ -7,7 +7,7 @@ app.use(cors());
 
 
 const db = mysql.createConnection({
-    host: 'https://trgdigitalsolutions.com/',
+    host: 'localhost',
     user: 'root',
     password: '',
     database: 'trg_db'
